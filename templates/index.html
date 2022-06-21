@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %} Hello, Django3! {% endblock %}
+
+{% block content %}
+    <h1>Hello, World!!</h1>
+    <h2>{{ hello }}</h2>
+    <h2> 현재시간 : {{ now }}</h2>
+    <h2> Django3 Template Inheritance </h2>
+
+    <div>
+        <button type="button" class="btn btn-primary">버튼</button>
+        <button type="button" class="btn btn-danger">버튼</button>
+        <button type="button" class="btn btn-dark">버튼</button>
+    </div>
+{% endblock %}
