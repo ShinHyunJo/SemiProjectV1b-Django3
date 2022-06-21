@@ -1,0 +1,29 @@
+
+
+        #main {height : auto; min-height: 500px }
+
+        /* 링크관련 스타일시트 캐시로 인해 성능향상*/
+        a{font-weight:bold }
+        a:link {text-decoration: none; color: black }
+        a:visited {text-decoration: none; color: black }
+        a:hover {text-decoration: underline; color: orange }
+        a:active {text-decoration: underline; color: orangered }
+
+
+        /*컨텐츠 영역너비 지정 및 정중앙 배치*/
+        #wrap {width:1250px; margin: 0 auto}
+
+
+         /*상단메뉴 수평배치*/
+        ul {list-style: none; padding:0}
+        ul li {display: inline-block; margin-left: 155px}
+        /*상단 로고 배치*/
+        header h1{ margin-bottom:45px}
+
+
+
+        /*저작권 중앙*/
+        footer span{display:block; text-align: center}
+
+
+        hr {background:black; color: black; height:1px; }
