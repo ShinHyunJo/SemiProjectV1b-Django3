@@ -1,68 +1,27 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <title>Python 웹프로젝트 v1</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/webproject.css">
-    <style>
+{% extends 'layout/base.html' %}
 
-        table {/*border:1px solid red;*/ margin:120px auto;
-            border-top: 3px solid black;
-            border-bottom: 3px solid black;}
-        th, td {padding:10px}
+{% block title %}member/myinfo{% endblock %}
 
-        table, #main th, #main td{
-            border-left:none;
-            border-right: none;
-            padding: 15px}
+{% block style %}
+/* 로그인한 회원의 정보 테이블 배치 */
+table { /*border: 1px solid red;*/
+   margin: 120px auto }
 
-        #main tr:nth-child(odd) {background: whitesmoke}
-        #main tr:nth-child(even) {background: cornsilk}
-        #main tr:hover{background: gainsboro}
+/* 회원 정보 각 행에 여백 주기 */
+th, td { padding: 10px }
 
+/* 회원 정보 테이블의 제목 정렬하기 */
+th { text-align: right }
+{% endblock %}
 
-
-    </style>
-</head>
-<body>
-<div id="wrap">
-    <header>
-        <h1>Python 웹 프로젝트 v1</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="join.html">회원가입</a></li>
-                <li><a href="login.html">로그인</a></li>
-                <li><a href="board.html">게시판</a></li>
-                <li><a href="myinfo.html">회원정보</a></li>
-            </ul>
-        </nav>
-        <hr>
-
-    </header>
-    <div id="main">
+{% block content %}
         <h2>회원정보</h2>
         <table>
             <tr><th>아이디</th><td>zzyzzy</td></tr>
             <tr><th>이름</th><td>으하하하</td></tr>
             <tr><th>이메일</th><td>zzyzzy@naver.com</td></tr>
             <tr><th>가입일</th><td>2022-05-27 12:17:36</td></tr>
-
         </table>
-    </div>
+{% endblock %}
 
-
-    <footer>
-        <hr>
-        <span>copyright &copy; zzyzzy. all right reserved.</span>
-    </footer>
-</div>
-
-
-
-
-
-
-</body>
-</html>
+{% block jscript %}{% endblock %}

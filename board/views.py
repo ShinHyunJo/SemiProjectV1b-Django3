@@ -6,8 +6,8 @@ def list(request):
 
 
 def view(request):
-    return render(request, 'view/list.html')
+    return render(request, 'board/view.html')
 
 
 def write(request):
-    return render(request, 'write/list.html')
+    return render(request, 'board/write.html')
