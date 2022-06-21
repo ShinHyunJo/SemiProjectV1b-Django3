@@ -1,16 +1,70 @@
-{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Python 웹프로젝트 v1</title>
+    <link rel="stylesheet" href="css/normalize.css">
 
-{% block title %} Hello, Django3! {% endblock %}
+    <style>
+        #main {height : auto; min-height: 500px }
 
-{% block content %}
-    <h1>Hello, World!!</h1>
-    <h2>{{ hello }}</h2>
-    <h2> 현재시간 : {{ now }}</h2>
-    <h2> Django3 Template Inheritance </h2>
+        /* 링크관련 스타일시트*/
+        a{font-weight:bold }
+        a:link {text-decoration: none; color: black }
+        a:visited {text-decoration: none; color: black }
+        a:hover {text-decoration: underline; color: #cb8e23
+        }
+        a:active {text-decoration: underline; color: pink }
 
-    <div>
-        <button type="button" class="btn btn-primary">버튼</button>
-        <button type="button" class="btn btn-danger">버튼</button>
-        <button type="button" class="btn btn-dark">버튼</button>
+        #wrap {/*border:1px solid red;*/ width:1250px;
+            margin:0 auto}
+
+
+
+        /*상단메뉴 수평배치*/
+        ul {list-style: none; padding:0}
+        ul li {display: inline-block; margin-left: 155px}
+        /*상단 로고 배치*/
+        header h1{ margin-bottom:45px}
+
+        footer span{display:block; text-align: center}
+
+        hr {background:black; color: black; height:1px; }
+
+
+
+    </style>
+</head>
+
+
+<body>
+    <div id="wrap">
+    <header>
+        <h1>Python 웹 프로젝트 v1</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="join.html">회원가입</a></li>
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="board.html">게시판</a></li>
+                <li><a href="myinfo.html">회원정보</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+    <div id="main"></div>
+
+
+    <footer>
+        <hr>
+        <span>copyright &copy; zzyzzy. all right reserved.</span>
+    </footer>
     </div>
-{% endblock %}
+
+
+
+
+
+
+</body>
+</html>
